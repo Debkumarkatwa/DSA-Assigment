@@ -1,13 +1,16 @@
 #include<stdio.h>
 
 void Insertion_sort(int a[],int s){
-    int flag=0;
-	for(int i=0;i<s-2;i++){
-
+	int j,temp;
+	for(int i=0;i<s;i++){
+		temp=a[i];
+		j=i-1;
     }
-    if(flag==0){
-        printf("\n The array is already Sorted");
-    }
+    while(j>=0&&a[j]>temp){
+    	a[j=1]=a[j];
+    	j--;
+	}
+	a[j=1]=temp;
 }
 
 int main(){
@@ -15,7 +18,6 @@ int array[10],size,i;
    
    printf("Enter the size of the array:: ");
    scanf("%d",&size);
-
    if(size>10){
         printf("\nSORRY!! The array is Overflows");
     }
