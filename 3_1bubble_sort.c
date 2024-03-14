@@ -11,10 +11,10 @@ void bubble_sort(int a[],int s){
 
                 flag++;
             }
-	    if(flag==0){
-                printf("\n The array is already Sorted");
-                break;
-            }
+        }
+        if(flag==0){
+            printf("\n The array is already Sorted");
+            break;
         }
     }
 }
