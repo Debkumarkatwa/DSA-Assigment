@@ -48,7 +48,7 @@ int main()
     printf("\nHow many nodes do you want to insert?");
     scanf("%d",&number);
     for(int i=0; i<number;i++){
-    	printf("\nHow many value do you want to insert?");
+    	printf("\nWhat value do you want to insert?");
     	scanf("%d",&value);
     	root=insertNode(root,value);
 	}
