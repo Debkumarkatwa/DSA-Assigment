@@ -5,12 +5,13 @@ void Insertion_sort(int a[],int s){
 	for(int i=0;i<s;i++){
 		temp=a[i];
 		j=i-1;
+    
+        while(j>=0&&a[j]>temp){
+    	    a[j+1]=a[j];
+    	    j--;
+	    }
+	    a[j+1]=temp;
     }
-    while(j>=0&&a[j]>temp){
-    	a[j=1]=a[j];
-    	j--;
-	}
-	a[j=1]=temp;
 }
 
 int main(){
